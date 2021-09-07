@@ -1,0 +1,7 @@
+{
+  "name": "Onboarding",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
