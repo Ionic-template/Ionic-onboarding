@@ -15,21 +15,34 @@ export class OnboardingPage implements OnInit {
 
   };
 
-  appInto = [
+  navigate(slide, index) {
+    slide.slideTo(index)
+  }
+
+  skip(){
+    alert("Skipped!!!")
+  }
+
+  start(){
+    alert("Start")
+  }
+
+  Slides = [
     {
-      title: 'Welcome to Soundsfluent',
-      text: 'Close the English fluency gap by the 10% that stand between you just functioning and thriving.',
-      img: 'onboard-1.svg'
+      title: 'Start to invest for your future!',
+      text: 'Ex totam praesentium incidunt aut.',
+      img: 'step-1.svg'
     },
     {
-      title: 'Welcome to Soundsfluent',
-      text: 'Close the English fluency gap by the 10% that stand between you just functioning and thriving.',
-      img: 'onboard-1.svg'
+      title: 'Follow our tips to achieve success!',
+      text: 'Ex totam praesentium incidunt aut.',
+      img: 'step-2.svg',
+      imgBottom: true,
     },
     {
-      title: 'Welcome to Soundsfluent',
-      text: 'Close the English fluency gap by the 10% that stand between you just functioning and thriving.',
-      img: 'onboard-1.svg'
+      title: 'Keep your investment safe',
+      text: 'Ex totam praesentium incidunt aut.',
+      img: 'step-3.svg'
     },
   ]
 
